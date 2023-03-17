@@ -4,32 +4,77 @@
     <meta charset="utf-8" />
     <title>UPS</title>
     <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/aeb5314b3e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <div class="alert">
-        <button>&lt;</button>
-        <span>1 of 2</span>
-        <button>&gt;</button>
-        <span>Service alert due to situation in Ukraine</span>
-        <a><u>...More</u></a>
-        <button>X</button>
+      <div class="alert-background">
+        <div class="alert-content">
+          <div class="alert-controls">
+            <button class="button">
+              <i class="fa-sharp fa-solid fa-angle-left"></i>
+            </button>
+            <span>1 of 2</span>
+            <button class="button">
+              <i class="fa-sharp fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="alert-message">
+            <span>Service Alert due to Situation in Ukraine</span>
+            <a class="alert-message-more"><u>...More</u></a>
+          </div>
+          <div class="alert-close">
+            <button class="button">
+              <i class="fa-sharp fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
       </div>
-      <nav class="side-nav">
-        <a>About UPS</a>
-        <a>Locations</a>
-        <button>Canada - English</button>
-      </nav>
-      <nav class="main-nav">
-        <a>Shipping</a>
-        <a>Tracking</a>
-        <a>Business Solutions</a>
-        <a>Support</a>
-        <button>Search</button>
-        <button>User Icon</button>
-      </nav>
+      <div class="navbar">
+        <nav class="main-nav">
+          <a class="logo" href=""
+            ><img
+              src="https://www.ups.com/assets/resources/images/UPS_logo.svg"
+          /></a>
+          <a class="main-nav-item" href="">Shipping</a>
+          <a class="main-nav-item" href="">Tracking</a>
+          <a class="main-nav-item" href="">Business Solutions</a>
+          <a class="main-nav-item" href="">Support</a>
+        </nav>
+        <nav class="side-nav">
+          <nav class="side-nav-items">
+            <a class="side-nav-item" href=""
+              >About UPS <i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+            <span> | </span>
+            <a class="side-nav-item" href="">Locations</a>
+            <span> | </span>
+            <button class="side-nav-item button" href="">
+              Canada - English
+              <i class="fa-sharp fa-solid fa-chevron-down"></i>
+            </button>
+          </nav>
+          <nav class="side-nav-icons">
+            <button id="search" class="side-nav-icon button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button id="login" class="side-nav-icon button">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </nav>
+        </nav>
+      </div>
     </header>
-    <main>
+    <!-- <main>
       <div class="delivery-info">
         <p>Your shipment</p>
         <p>1ZV5Y8336755936000</p>
@@ -80,6 +125,6 @@
         provided by TFI International Inc. or its affiliates, divisions,
         subsidiaries or related entities.
       </p>
-    </footer>
+    </footer> -->
   </body>
 </html>
